@@ -1,0 +1,41 @@
+.registrationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 250px;
+    border: solid 1px slategray;
+    border-radius: 10px;
+
+}
+
+.registrationContainer .name,.age{
+    margin: 10px;
+    width: 200px;
+    height: 20px;
+    border-radius: 12px;
+    border: solid 1px slategray;
+}
+
+.registrationContainer .msg{
+    font-size: 10px;
+}
+
+.registrationContainer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="button"] { 
+    background-color: #4caf50; 
+    color: white; 
+    padding: 10px 20px;
+    margin: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  } 
+   
+  input[type="button"]:hover { 
+    background-color: #45a049; 
+  }

@@ -1,0 +1,27 @@
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 10px auto;
+  }
+  
+  .navigation li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navigation li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navigation li a.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

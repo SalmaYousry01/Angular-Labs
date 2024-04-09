@@ -1,0 +1,19 @@
+<div class="form">
+    <input type="text" [(ngModel)]="name" placeholder="Name" class="input-field">
+    <p>Name: {{ name }}</p>
+    <input type="button" value="Reset" (click)="reset()" class="button">
+</div>
+
+<hr>
+<div class="image-container">
+    <div>
+        <img [src]="imageArray[currentIndex]">
+    </div>
+    <div>
+        <input type="button" value="Next" (click)="nextImage()" class="button">
+        <input type="button" value="Prev" (click)="prevImage()" class="button">
+        <input type="button" value="slideShow" (click)="slideShow()" class="button">
+        <input type="button" value="Stop" (click)="stop()" class="button">
+    </div>
+</div>
+

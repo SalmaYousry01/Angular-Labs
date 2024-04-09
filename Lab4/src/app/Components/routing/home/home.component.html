@@ -1,0 +1,38 @@
+<div class="container"> 
+    <div class="row"> 
+      <div class="col"> 
+        <form [formGroup]="regForm" class="form"> 
+          <div class="form-group d-flex m-2"> 
+            <label for="name" class="w-25">Name</label> 
+            <input formControlName="name" id="name" class="form-control" type="text"> 
+          </div> 
+          <div *ngIf="!NameValid" style="color: red;" class="err-msg">Name must be three characters or more</div>
+
+
+          <div class="form-group d-flex m-2"> 
+            <label for="age" class="w-25">Age</label> 
+            <input formControlName="age" id="age" class="form-control" type="number"> 
+          </div> 
+          <div *ngIf="!AgeValid" style="color: red;" class="err-msg">Age must be Between 10 oand 30</div> 
+
+
+          <div class="form-group d-flex m-2"> 
+            <label for="name" class="w-25">Email</label> 
+            <input 
+              formControlName="email" 
+              id="email" 
+              class="form-control" 
+              type="email" 
+            /> 
+          </div>
+          <div *ngIf="!EmailValid" style="color: red;" class="err-msg">Email not valid</div> 
+
+
+          <div *ngIF="regForm.Valid" style="color: greenyellow;">Valid Data</div>
+          <div class="form-group text-center"> 
+            <input (click)="Check()" class="btn btn-outline-success" value="Check" type="submit"> 
+          </div> 
+        </form> 
+      </div> 
+    </div> 
+  

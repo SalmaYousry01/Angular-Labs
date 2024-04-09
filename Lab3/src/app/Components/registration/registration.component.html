@@ -1,0 +1,35 @@
+<div class="registrationContainer">
+    <p>Registration</p>
+    <input [(ngModel)]="name" type="text"  placeholder="Name" class="name">
+    <div *ngIf="+name.length<3;then invalidName;else validName" style="color: greenyellow;" class="msg"></div>
+    <input [(ngModel)]="age" type="number"  placeholder="Age" class="age">
+    <div *ngIf="+age>30 || +age<10;then invalidAge;else validAge" style="color: greenyellow;" class="msg"></div>
+    <input type="button" value="Add" (click)="Send()">
+</div>
+
+
+<!-- Age Validation -->
+<ng-template #validAge>
+    <div style="color: greenyellow;" class="msg">
+        Valid age
+    </div>
+</ng-template>
+
+<ng-template #invalidAge>
+    <div *ngIf="age" style="color: red;" class="msg">
+        Please enter an age between 10 and 30
+    </div>
+</ng-template>
+
+<!-- Name Validation -->
+<ng-template #validName>
+    <div style="color: greenyellow;" class="msg">
+        Valid name
+    </div>
+</ng-template>
+
+<ng-template #invalidName>
+    <div *ngIf="name" style="color: red;" class="msg">
+        Invalid name, name nust be more than 3 characters
+    </div>
+</ng-template>
