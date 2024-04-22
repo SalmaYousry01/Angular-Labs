@@ -1,0 +1,11 @@
+.circle {
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
+    line-height: 30px; 
+  }
+  .btncolor{
+    background-color: #0D6EFD;
+    font-size: xx-large;
+    color: white;
+  } 

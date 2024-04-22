@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+      @for (std of students; track std.id) {
+        <div class="col-4 d-flex justify-content-center">
+          <app-onestudent [student]="std"></app-onestudent>
+        </div>
+      }
+      <footer class="footer fixed-bottom bg-light">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-auto">
+              <button routerLink="/add" class="btn btn-outline-primary btncolor circle">+ </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>

@@ -1,0 +1,52 @@
+{
+  "Students": [
+    {
+      "id": "1",
+      "name": "karim",
+      "age": 30,
+      "email": "karim@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "ahamd",
+      "age": 22,
+      "email": "ahmad@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "atef",
+      "age": 23,
+      "email": "atef@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "yasser",
+      "age": 31,
+      "email": "yasser@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "khaled",
+      "age": 32,
+      "email": "khaled@gmail.com"
+    },
+    {
+      "id": "6",
+      "name": "fouad",
+      "age": 33,
+      "email": "faoud@gmail.com"
+    },
+    {
+      "id": "7",
+      "name": "hzl2oom",
+      "age": 23,
+      "email": "hzloom@gmail.com"
+    },
+    {
+      "id": "10",
+      "name": "karim",
+      "age": 32,
+      "email": "qebxzge@getnada.com"
+    }
+  ]
+}

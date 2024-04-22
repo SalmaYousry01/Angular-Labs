@@ -1,0 +1,41 @@
+<form [formGroup]="Registeration" class="form">
+    <div class="mb-1 mt-3  d-flex">
+        <label for="exampleInputid" class="form-label p-2"><strong>ID:</strong></label>
+        <input formControlName="id" name="id" type="text" class="form-control" id="exampleInputname" />
+    </div>
+    @if (!nameValid) {
+    <div class="text-danger text-center ">
+        <p><strong>id is InValid</strong></p>
+    </div>
+    }
+    <div class="mb-1 mt-3  d-flex">
+        <label for="exampleInputname" class="form-label p-2"><strong>Name:</strong></label>
+        <input formControlName="name" name="name" type="text" class="form-control" id="exampleInputname" />
+    </div>
+    @if (!nameValid) {
+    <div class="text-danger text-center ">
+        <p><strong>Name is InValid</strong></p>
+    </div>
+    }
+    <div class="mb-1 mt-3 d-flex">
+        <label for="exampleInputage" class="form-label p-2"><strong>Age:</strong></label>
+        <input formControlName="age" name="age" type="number" class="form-control" id="exampleInputage" />
+    </div>
+    @if (!ageValid) {
+    <div class="text-danger text-center">
+        <p><strong>Age is InValid</strong></p>
+    </div>
+    }
+    <div class="mb-1 mt-3 d-flex">
+        <label for="exampleInputEmail1" class="form-label p-2"><strong>Email:</strong></label>
+        <input formControlName="email" name="email" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" />
+    </div>
+    @if (!emailValid) {
+    <div class="text-danger text-center">
+        <p><strong>Email is InValid</strong></p>
+    </div>
+    }
+    <button (click)="getdata()" type="submit" class="btn btn-outline-primary mt-3 ">Submit</button>
+</form>
+
